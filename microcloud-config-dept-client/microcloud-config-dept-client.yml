@@ -14,6 +14,7 @@ spring:
      url: jdbc:mysql://localhost:3306/mldn8001           # 数据库连接地址
      username: root                                  # 数据库用户名
 #     password: root                                  # 数据库连接密码
+#   密钥加密
      password: '{cipher}300697802386e27752a26ca50a344bef73fe4c5ef68725c759139d6f325813a3'                                  # 数据库连接密码
      dbcp2:                                          # 进行数据库连接池的配置
        min-idle: 5                                   # 数据库连接池的最小维持连接数
@@ -47,7 +48,9 @@ spring:
      driver-class-name: com.mysql.jdbc.Driver      # 配置MySQL的驱动程序类
      url: jdbc:mysql://localhost:3306/mldn8002           # 数据库连接地址
      username: root                                  # 数据库用户名
-     password: root                                  # 数据库连接密码
+#     password: root                                  # 数据库连接密码
+#     keystore加密
+     password: '{cipher}AQCtETXvLdFGxYklm2pll/HHAqvhRUTrgTOjL3dNbZCt85lFFgmvbQ+M7awLWCZbBshYQF94+dbvaRDBYxvOWoLnxkMWzRdGQHmb26enBvBTtfdHjsa0gKiiAbuXO8VIuWx5E5FN8sbePNfWebwaiWfWxmbv/RnbCly9XGscCxCY3yvH3FdqXK85PaW2pdqgwytFCXVBhz3JIC4G31YwujIQcoozh91EYk1xhNNudDjIqdpHlkU6aoHKOWTbBkPpKeQbWMYuSnrgbrubg41XQmTZjkHxtGFUGD1hfNNsvPH2ErL+KRoHvMSq8wUoXjnQcUhHbM0EIQshUkQzNNy495G/deiIXKP8ol079NAoYlIetLzF6OdBcxHzlOJCdK8T7ws='                                 # 数据库连接密码
      dbcp2:                                          # 进行数据库连接池的配置
        min-idle: 5                                   # 数据库连接池的最小维持连接数
        initial-size: 5                               # 初始化提供的连接数
