@@ -24,6 +24,9 @@ eureka:
 #    lease-expiration-duration-in-seconds: 5
     # 设置心跳的时间间隔（默认是30秒）
 #    lease-renewal-interval-in-seconds: 2
+info:
+  app.name: microcloud-config-client
+  app.version: dev-1.0.0
 ---
 server:
   port: 7702
@@ -39,6 +42,9 @@ eureka:
     # 在信息列表时显示主机名称
     instance-id: config-client-7702.com
     prefer-ip-address: true
+info:
+  app.name: microcloud-config-client
+  app.version: beta-1.0.0
 ---
 server:
   port: 7703
@@ -54,3 +60,6 @@ eureka:
     # 在信息列表时显示主机名称
     instance-id: config-client-7703.com
     prefer-ip-address: true
+info:
+  app.name: microcloud-config-client
+  app.version: prod-1.0.0
