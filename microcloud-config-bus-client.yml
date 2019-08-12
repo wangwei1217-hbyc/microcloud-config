@@ -1,0 +1,35 @@
+spring:
+ profiles:
+  active:
+  - dev
+
+---
+server:
+  port: 8701
+spring:
+ profiles: dev
+ application:
+  name: microcloud-config-bus-client
+info:
+  app.name: microcloud-config-bus-client
+  app.version: dev-1.0.0
+---
+server:
+  port: 8702
+spring:
+ profiles: beta
+ application:
+  name: microcloud-config-bus-client
+info:
+  app.name: microcloud-config-bus-client
+  app.version: beta-1.0.0
+---
+server:
+  port: 8703
+spring:
+ profiles: prod
+ application:
+  name: microcloud-config-bus-client
+info:
+  app.name: microcloud-config-bus-client
+  app.version: prod-1.0.0
