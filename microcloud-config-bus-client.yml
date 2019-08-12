@@ -11,8 +11,8 @@ spring:
  application:
   name: microcloud-config-bus-client
 info:
-  app.name: microcloud-config-bus-client
-  app.version: dev-1.2.0
+  app.name: microcloud-config-bus-client-1.3.0
+  app.version: dev-1.3.0
 ---
 server:
   port: 8702
